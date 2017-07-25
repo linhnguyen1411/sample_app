@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+    <a href="http://www.railstutorial.org/"><%= t "static_pages.rails_tuts" %></a>
+    <%= t "static_pages.by" %> <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("static_pages.About"), about_path %></li>
+      <li><%= link_to t("static_pages.Contact"), contact_path %></li>
+      <li><%= link_to t("static_pages.News"), "http://news.railstutorial.org/"%></li>
+    </ul>
+  </nav>
+</footer>
