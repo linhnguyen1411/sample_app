@@ -31,3 +31,11 @@
 
 en:
   hello: "Hello world"
+  static_pages:
+    home:
+      content: "This is the home page for the"
+      title: "Ruby on Rails Tutorial"
+    footer:
+      site_info: "The Ruby on Rails Tutorial"
+    contact:
+      contact_address: "Contact the Ruby on Rails Tutorial about the sample app at the"
