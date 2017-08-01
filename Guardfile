@@ -15,6 +15,7 @@
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 guard :minitest, spring: "bin/rails test", all_on_start: false do
+end
 guard :minitest do
   # with Minitest::Unit
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
