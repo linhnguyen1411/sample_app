@@ -58,11 +58,15 @@ en:
     Sign_up: "Sign up"
     home:
       sample_application: "sample application."
+    home:
+      welcome: "Welcome to the Sample App - Linh Nguyen"
+      title: "This is the home page for the"
       address: "Ruby on Rails Tutorial"
     help:
       address: "Get help on the Ruby on Rails Tutorial at the"
       see_more: "To get help on this sample app, see the"
       Rails_tutorial_help_section: "Rails Tutorial help section"
+    contact:
       page: "contact page"
       address: "Contact the Ruby on Rails Tutorial about the sample app at the"
     title:
@@ -73,6 +77,17 @@ en:
       screencast_series: "screencast series"
       to_each: "to teach web development with"
       ROB: "Ruby on Rails"
+    new:
       Users: "Users"
       new: "new"
       find_me: "Find me in app/views/users/new.html.erb"
+      Confirmation: "Confirmation"
+      Create_account: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      fl_success: "Welcome to the Sample App!"
+  error:
+    error: "error"
+    The_form_contains: "The form contains "
+    user_not_vaild: "User is not vaild, please sign up!"

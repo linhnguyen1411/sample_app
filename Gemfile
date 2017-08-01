@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails", "~> 5.1.2"
+gem "bcrypt", "3.1.11"
 gem "bootstrap-sass", "3.3.7"
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
@@ -16,7 +17,6 @@ gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
-
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
 gem "jquery-rails", "4.3.1"
@@ -36,6 +36,7 @@ group :development, :test do
   gem "sqlite3", "1.3.13"
   # Call "byebug" anywhere in the code
   # to stop execution and get a debugger console
+  gem "pry-rails"
   gem "byebug", platforms: :mri
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 2.13"
