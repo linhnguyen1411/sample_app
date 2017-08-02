@@ -77,6 +77,17 @@ en:
       screencast_series: "screencast series"
       to_each: "to teach web development with"
       ROB: "Ruby on Rails"
+    new:
       Users: "Users"
       new: "new"
       find_me: "Find me in app/views/users/new.html.erb"
+      Confirmation: "Confirmation"
+      Create_account: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      fl_success: "Welcome to the Sample App!"
+  error:
+    error: "error"
+    The_form_contains: "The form contains "
+    user_not_vaild: "User is not vaild, please sign up!"
