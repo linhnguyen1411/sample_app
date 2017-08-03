@@ -5,7 +5,7 @@ class UsersController < ApplicationController
       flash[:danger] = I18n.t("error.user_not_vaild")
       redirect_to signup_path
     else
-      flash[:success] = I18n.t("static_pages.new.fl_success")
+      flash.now[:success] = I18n.t("static_pages.new.fl_success")
     end
   end
 
@@ -16,7 +16,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = I18n.t("static_pages.new.fl_success")
+      log_in @user
+      flash.now[:success] = I18n.t("static_pages.new.fl_success")
       redirect_to @user
     else
       render :new
