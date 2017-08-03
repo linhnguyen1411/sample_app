@@ -3,8 +3,8 @@
     <%= link_to t("static_pages.sample_app"), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t("static_pages.home"), root_path %></li>
-        <li><%= link_to t("static_pages.help"), help_path %></li>
+        <li><%= link_to t("static_pages.menu_home"), root_path %></li>
+        <li><%= link_to t("static_pages.menu_help"), help_path %></li>
         <% if logged_in? %>
           <li><%= link_to t("static_pages.users"), current_user %></li>
           <li class="dropdown">
