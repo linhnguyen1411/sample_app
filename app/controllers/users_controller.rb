@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     if @user.blank?
-      flash[:danger] = I18n.t("error.user_not_vaild")
+      flash.now[:danger] = I18n.t("error.user_not_vaild")
       redirect_to signup_path
     else
       flash.now[:success] = I18n.t("static_pages.new.fl_success")
