@@ -42,6 +42,7 @@ en:
     news: "News"
     about: "About"
     contact: "Contact"
+    delete: "Delete"
     help: "Help"
     home: "Home"
     menu_news: "News"
@@ -92,8 +93,36 @@ en:
       password: "password"
       fl_success: "Welcome to the Sample App!"
       remember_me: "Remember me on this computer"
+    users_page:
+      edit: "Edit user"
+      update_user: "Update your user"
+      save_changes: "Save Changes"
+      change: "Change"
+    index:
+      all: "All users"
   error:
     error: "error"
     the_form_contains: "The form contains "
     user_not_vaild: "User is not vaild, please sign up!"
     login_fail: "Invalid email/password combination"
+    login: "Please log in!"
+  confirm:
+    sure: "You sure?"
+  success:
+    profile_updated: "Profile updated"
+    user_deleted: "User deleted"
+    welcome: "Welcome!"
+    account_activated: "Account activated!"
+  danger:
+    invalid_acc_link: "Invalid activation link"
+  info:
+    check_mail: "Please check your email to activate your account."
+  accout:
+    link_active: "Welcome to the Sample App! Click on the link below to activate your account:"
+    hi: "Hi"
+  message:
+    acc_not_activated: "Account not activated. Check your email!"
+  acc_validate:
+    hi: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+
