@@ -1,16 +1,13 @@
 class UsersController < ApplicationController
+  before_action :load_user, only: %I[edit update]
   before_action :logged_in_user, only: %I[edit update index]
   before_action :correct_user, only: %I[edit update]
   before_action :admin_user, only: :destroy
-  before_action :load_user, only: %I[edit update]
   def show
     @user = User.find_by id: params[:id]
-    if @user.blank?
-      flash.now[:danger] = t "error.user_not_vaild"
-      redirect_to signup_path
-    else
-      flash.now[:success] = t "static_pages.new.fl_success"
-    end
+    return if @user.present?
+    flash.now[:danger] = t "error.user_not_vaild"
+    redirect_to signup_path
   end
 
   def index
@@ -36,10 +33,9 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if @user.update_attributes user_params
+    if @user.update_attributes(user_params)
       flash[:success] = t "success.profile_updated"
       redirect_to @user
-      # Handle a successful update.
     else
       render :edit
     end
