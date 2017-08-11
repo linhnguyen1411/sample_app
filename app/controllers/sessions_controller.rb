@@ -30,5 +30,7 @@ class SessionsController < ApplicationController
 
   def load_user
     @user = User.find_by email: params[:session][:email].downcase
+    return if @user
+    redirect_to login_path
   end
 end

@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails", "~> 5.1.2"
+gem "config"
 gem "bcrypt", "3.1.11"
 gem "bootstrap-sass", "3.3.7"
 gem "faker", "1.7.3"
@@ -14,6 +15,9 @@ gem "mini_magick", "4.7.0"
 gem "fog", "1.40.0"
 gem "will_paginate", "3.1.5"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave",             "1.1.0"
+gem "mini_magick",             "4.7.0"
+gem "fog",                     "1.40.0"
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem "puma", "~> 3.7"

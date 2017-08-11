@@ -1,16 +1,13 @@
 class UsersController < ApplicationController
+  before_action :load_user, only: %I[show edit update]
   before_action :logged_in_user, only: %I[edit update index]
   before_action :correct_user, only: %I[edit update]
   before_action :admin_user, only: :destroy
-  before_action :load_user, only: %I[edit update]
   def show
-    @user = User.find_by id: params[:id]
-    if @user.blank?
-      flash.now[:danger] = t "error.user_not_vaild"
-      redirect_to signup_path
-    else
-      flash.now[:success] = t "static_pages.new.fl_success"
-    end
+    @microposts = @user.microposts.paginate(page: params[:page])
+    return if @user.present?
+    flash.now[:danger] = t "error.user_not_vaild"
+    redirect_to signup_path
   end
 
   def index
@@ -26,7 +23,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.send_activation_email
       UserMailer.account_activation(@user).deliver_now
-      flash[:info] = t "info.check_mail"
+      flash[:info] = t "info.check_email"
       redirect_to root_url
     else
       render :new
@@ -55,7 +52,7 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
-    return if @user.blank?
+    return if @user
     redirect_to login_path
   end
 

@@ -77,6 +77,10 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    config (1.4.0)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.1.1)
+    deep_merge (1.1.1)
     erubi (1.6.1)
     excon (0.58.0)
     execjs (2.7.0)
@@ -406,6 +410,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   carrierwave (= 1.1.0)
   coffee-rails (~> 4.2)
+  config
   faker (= 1.7.3)
   fog (= 1.40.0)
   guard (= 2.13.0)

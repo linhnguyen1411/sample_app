@@ -28,7 +28,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     {
       name: name,
       email: email,
-      password:              "",
+      password: "",
       password_confirmation: ""
     }}
     assert_not flash.empty?
@@ -48,7 +48,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
         name: @user.name,
         email: @user.email
       }}
-    assert_not flash.empty?
+    assert flash.empty?
     assert_redirected_to login_url
   end
 end
