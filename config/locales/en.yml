@@ -35,6 +35,7 @@ en:
   hello: "Hello world"
   rob: "Ruby on Rails"
   static_pages:
+    view_profile: "view my profile"
     micropost_feed: "Micropost Feed"
     sample_app: "sample app"
     rails_tuts: "The Ruby on Rails Tutorial"
@@ -76,6 +77,8 @@ en:
       address: "Contact the Ruby on Rails Tutorial about the sample app at the"
     title:
       a: "Ruby on Rails Tutorial Sample App Linh"
+      follower: "Follower"
+      following: "Following"
     about_page:
       is_a: "is a"
       book: "book"
@@ -127,6 +130,7 @@ en:
     post_success: "Micropost created!"
     post_delete: "Micropost deleted!"
     login: "Please log in."
+    user_not_exist: "User is not exist!"
   accout:
     link_active: "Welcome to the Sample App! Click on the link below to activate your account:"
     hi: "Hi"
@@ -146,8 +150,13 @@ en:
     password_reset: "Password reset"
   button:
     submit: "Submit"
+    follow: "Follow"
+    unfollow: "Unfollow"
   post:
     posted: "Posted"
     delete: "delete"
   micropost:
     microposts: "Microposts"
+  follow:
+    following: "following"
+    follower: "followers"
